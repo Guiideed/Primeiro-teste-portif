@@ -1,0 +1,124 @@
+body{
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+}
+header .logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+}
+header .menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu-line{
+    height: 3px;
+    background-color: black;
+
+    
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+
+}
+.container .left-side{
+    display: flex;
+    align-items: center;
+    background-color: #370355;
+    flex: 1;
+    padding: 0px 20px;
+}
+.container .info{
+    color: wheat;
+}
+.container .info .profession{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+
+}
+.container .info .name{
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+
+}
+.container .info .buttons a{
+    display: inline-block;
+    background-color:white ;
+    color: #4e017a;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    margin-right:10px ;
+}
+.container .rigth-side{
+    flex: 1;
+    background-color: #4e017a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .rigth-side .photo-container{
+    background-image: url(../images/Myphoto.jpg);
+    height: 400px;
+    width: 400px;
+    border-radius:50%;
+    background-size: cover;
+    
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    font-size: 13px;
+}
+footer a{
+    color: white;
+}
+
+
+
+@media (max-width:850px){
+    header{
+        position: initial;
+        background-color: #370355;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .container .left-side{
+        flex: none;
+    }
+
+
+}
